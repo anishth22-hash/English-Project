@@ -6,7 +6,7 @@
 
 :root {
     --american-red: #B22234;
-    --american-blue: #3236a1;
+    --american-blue: #5B5EA6;
     --american-white: #FFFFFF;
     --light-gray: #F5F5F5;
     --lighter-gray: #FAFAFA;
@@ -492,11 +492,10 @@ body {
 }
 
 .poem-image {
-    width: 700px;
+    width: 350px;
     flex-shrink: 0;
-    border-radius: 400px;
+    border-radius: 4px;
     object-fit: cover;
-    align-self: center;
 }
 
 @media (max-width: 768px) {
@@ -514,6 +513,24 @@ body {
         flex-direction: column;
     }
     .poem-image {
+        width: 100%;
+    }
+}
+
+.poem-images-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+    width: 350px;
+}
+
+.poem-images-stack .poem-image {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .poem-images-stack {
         width: 100%;
     }
 }
