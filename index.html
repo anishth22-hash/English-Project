@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Threads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">American Threads</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#artist-statements" class="nav-link">Artist's Statements</a></li>
+                <li><a href="#citations" class="nav-link">Citations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <div class="hero-content">
+            <p class="hero-label">DIGITAL POETRY COLLECTION</p>
+            <h1 class="hero-title">American <span class="italic-word">Threads</span></h1>
+            <p class="hero-subtitle">Twelve poems woven together — on family, ambition, belonging, and hope — tracing the contours of modern American identity.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="readBtn">Read the collection</button>
+                <button class="btn btn-secondary" id="statementBtn">Artist's statement</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Themes Section -->
+    <section id="poems" class="themes-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">THE THEMES</p>
+                <h2 class="section-title">The themes that hold us together</h2>
+
+            </div>
+
+            <div class="themes-grid">
+                <div class="theme-card" data-theme="short-stories">
+                    <p class="theme-number">01</p>
+                    <p class="theme-count">2 POEMS</p>
+                    <h3 class="theme-name">Short Stories</h3>
+                    <p class="theme-desc">Shadows of Reservation &amp; Golden Door</p>
+                </div>
+
+                <div class="theme-card" data-theme="kindred">
+                    <p class="theme-number">02</p>
+                    <p class="theme-count">2 POEMS</p>
+                    <h3 class="theme-name">Kindred</h3>
+                    <p class="theme-desc">To Belong Here &amp; Daniel's untitled poem</p>
+                </div>
+
+                <div class="theme-card" data-theme="great-gatsby">
+                    <p class="theme-number">03</p>
+                    <p class="theme-count">3 POEMS</p>
+                    <h3 class="theme-name">The Great Gatsby</h3>
+                    <p class="theme-desc">Insurmountable Ashes, The Light that Never Stays &amp; Mothlight</p>
+                </div>
+
+                <div class="theme-card" data-theme="grapes-of-wrath">
+                    <p class="theme-number">04</p>
+                    <p class="theme-count">2 POEMS</p>
+                    <h3 class="theme-name">The Grapes of Wrath</h3>
+                    <p class="theme-desc">Bright Rot &amp; Max's unfinished poem</p>
+                </div>
+
+                <div class="theme-card" data-theme="things-carried">
+                    <p class="theme-number">05</p>
+                    <p class="theme-count">2 POEMS</p>
+                    <h3 class="theme-name">The Things They Carried</h3>
+                    <p class="theme-desc">Rooted Deep &amp; What We Carry</p>
+                </div>
+
+                <div class="theme-card" data-theme="other">
+                    <p class="theme-number">06</p>
+                    <p class="theme-count">1 POEM</p>
+                    <h3 class="theme-name">Other</h3>
+                    <p class="theme-desc">Invisible Hands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Poems Display -->
+        <div id="poems-display" class="poems-display hidden">
+            <!-- Short Stories Section -->
+            <section id="short-stories" class="category-section active">
+                <h2>Short Stories</h2>
+                <article class="poem-card">
+                    <h3>Golden Door</h3>
+                    <p class="author">By Anish Thota</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>They said their home was gone</p>
+                            <p>left somewhere between</p>
+                            <p>crowded roads,</p>
+                            <p>refugee camps,</p>
+                            <p>and the ocean.</p>
+                            <p></p>
+                            <p>People saw labels,</p>
+                            <p>refugee, foreigner, stranger.</p>
+                            <p>as if a person</p>
+                            <p>could be reduced to a single word.</p>
+                            <p></p>
+                            <p>But hope survived</p>
+                            <p>not as a promise</p>
+                            <p>that everything would be fair,</p>
+                            <p>but as a refusal to believe</p>
+                            <p>that hardship gets the final word.</p>
+                            <p></p>
+                            <p>Hope survived.</p>
+                            <p></p>
+                            <p>It lived in grocery stores</p>
+                            <p>built from empty pockets,</p>
+                            <p>in children learning new languages,</p>
+                            <p>in families planting roots</p>
+                            <p>where none existed before.</p>
+                            <p></p>
+                            <p>The world offered fear,</p>
+                            <p>like it was an inheritance,</p>
+                            <p>a warning passed from generation to generation.</p>
+                            <p></p>
+                            <p>Yet hope answered with open doors,</p>
+                            <p>outstretched hands,</p>
+                            <p>and the belief that a nation</p>
+                            <p>can become the dream</p>
+                            <p>it promises to be.</p>
+                        </div>
+                        <img src="golden-door.png" alt="Illustration of a person on a mountain peak held in an open hand" class="poem-image">
+                    </div>
+                </article>
+
+                <article class="poem-card">
+                    <h3>Shadows of the Reservation</h3>
+                    <p class="author">By Daniel Murphy</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p></p>
+                            <p>Late at night inside the local corner store,</p>
+                            <p>The clerk thinks I'm a threat and nothing more.</p>
+                            <p>The cops pull me over and make it clear,</p>
+                            <p>That people like me shouldn't be driving here.</p>
+                            <p></p>
+                            <p>My girlfriend and I fought with words like heavy fists,</p>
+                            <p>While in my mind, the violence of history persists.</p>
+                            <p>Our love in Seattle turned into a painted war,</p>
+                            <p>So I packed my bags and walked right out the door.</p>
+                            <p></p>
+                            <p>I was the college kid who was supposed to rise,</p>
+                            <p>A brand new warrior aiming for the skies.</p>
+                            <p>But drinking and deep sadness put me to the test,</p>
+                            <p>And basketball is now just a memory in my chest.</p>
+                            <p></p>
+                            <p>Now answering phones, I hide my Native voice,</p>
+                            <p>Living alone in Spokane, I feel like I have no choice.</p>
+                            <p>She calls me and claims she'll change the world someday,</p>
+                            <p>But lying in the dark, I watch my dreams just fade away.</p>
+                        </div>
+                        <img src="reservation-1.png" alt="Historical illustration of Native Americans on horseback" class="poem-image">
+                    </div>
+                </article>
+            </section>
+
+            <!-- Kindred Section -->
+            <section id="kindred" class="category-section">
+                <h2>Kindred</h2>
+                
+                <article class="poem-card">
+                    <h3>To Belong Here</h3>
+                    <p class="author">By Max Nyden</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>I twist my tongue to fit the crowd,</p>
+                            <p>    To act the way they say I should,</p>
+                            <p></p>
+                            <p>Cover my parts that stand too proud,</p>
+                            <p>    Exchange my roots for "something good."</p>
+                            <p></p>
+                            <p>Like Dana trapped in another time,</p>
+                            <p></p>
+                            <p>Forced to survive by changing face,</p>
+                            <p>    I learn to silence truth and pride</p>
+                            <p>    So I can safely keep my place.</p>
+                            <p></p>
+                            <p>The past whispers through our skin,</p>
+                            <p>    With names we soften, words we hide,</p>
+                            <p>    We chase acceptance just to fit in</p>
+                            <p>    While leaving pieces of ourselves behind.</p>
+                            <p></p>
+                            <p>    At school I laugh at jokes I hate,</p>
+                            <p>    Pretend the comments do not sting,</p>
+                            <p>    I straighten words to sound great,</p>
+                            <p>    As if my past means anything.</p>
+                            <p></p>
+                            <p>    Yet every mirror seems to show</p>
+                            <p>    The self I buried deep inside,</p>
+                            <p>    A person scared to let it grow,</p>
+                            <p>    Too tired of always having to hide.</p>
+                            <p></p>
+                            <p>    So maybe being red white and blue</p>
+                            <p>    Should mean we do not have to blend,</p>
+                            <p>    Because a nation strong and true</p>
+                            <p>    Makes room for the truths we send.</p>
+                        </div>
+                        <img src="to-belong-here.png" alt="The Melting Pot cartoon showing America with cans of different cultures" class="poem-image">
+                    </div>
+                </article>
+
+                <article class="poem-card">
+                    <h3>What Time Refuses to Forget</h3>
+                    <p class="author">By Daniel Murphy</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>The past and the future are together as one,</p>
+                            <p>My ancestors' pain stings me every day,</p>
+                            <p>In fields where backs broke under the sun,</p>
+                            <p>There's nothing left for them to do or say.</p>
+                            <p></p>
+                            <p>To be American is to inherit invisible chains,</p>
+                            <p>Laboring through roles the world assigns,</p>
+                            <p>History echoes through inherited pains,</p>
+                            <p>And shapes the identities we hide behind.</p>
+                            <p></p>
+                            <p>Like the pain of a lost left arm,</p>
+                            <p>Or the threat of a snapping whip at bay,</p>
+                            <p>We carry what society forces us to bear,</p>
+                            <p>Even when time has tried to pull it away.</p>
+                            <p></p>
+                            <p>History rings loud like an alarm in the night,</p>
+                            <p>So what does it mean to live "free" today?</p>
+                            <p>We are shaped by shadows, yet reach for light,</p>
+                            <p>Still trying to find out who we are along the way.</p>
+                        </div>
+                        <img src="kindred-field.png" alt="Historical illustration of field workers" class="poem-image">
+                    </div>
+                </article>
+            </section>
+
+            <!-- The Great Gatsby Section -->
+            <section id="great-gatsby" class="category-section">
+                <h2>The Great Gatsby</h2>
+                
+                <article class="poem-card">
+                    <h3>Insurmountable Ashes</h3>
+                    <p class="author">By Max Nyden</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>Ashes never disappear.</p>
+                            <p>They settle in sidewalk cracks,</p>
+                            <p>Nestle on warehouse roofs,</p>
+                            <p>But also in the hands of the poor.</p>
+                            <p></p>
+                            <p>In the distance gold rains down from above,</p>
+                            <p>But all becomes ash when it reaches the ground.</p>
+                            <p></p>
+                            <p>We are told what we have is what we are,</p>
+                            <p>    Measured with a dollar bill ruler.</p>
+                            <p></p>
+                            <p>Our failures and mistakes become a mountain of ash,</p>
+                            <p></p>
+                            <p>And at the top lies a perfect green light.</p>
+                            <p></p>
+                            <p>Pressured by the thoughts of others,</p>
+                            <p>We march up the mountain with hope.</p>
+                            <p></p>
+                            <p>The ash rises faster than our footsteps can climb,</p>
+                            <p></p>
+                            <p>Burying any path that we make.</p>
+                            <p>It is the reason why we try,</p>
+                            <p></p>
+                            <p>Making us show up every day.</p>
+                        </div>
+                        <img src="insurmountable-ashes.png" alt="A pile of dark ash" class="poem-image">
+                    </div>
+                </article>
+
+                <article class="poem-card">
+                    <h3>Mothlight</h3>
+                    <p class="author">By Anish Thota</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>Every night, the moth returns,</p>
+                            <p>spellbound by the porch light's glow.</p>
+                            <p>It circles like a prayer,</p>
+                            <p>like worship offered to something</p>
+                            <p>too bright to understand.</p>
+                            <p></p>
+                            <p>The light promises warmth,</p>
+                            <p>a place where loneliness dissolves,</p>
+                            <p>where darkness loses its grip.</p>
+                            <p>From far away, it almost looks like love.</p>
+                            <p></p>
+                            <p>So the moth drifts closer—</p>
+                            <p>closer still—</p>
+                            <p>ignoring the ash-white wings</p>
+                            <p>scattered beneath the bulb</p>
+                            <p>like warnings no one survives to tell.</p>
+                            <p></p>
+                            <p>It believes that at the center</p>
+                            <p>it will finally become whole,</p>
+                            <p>become noticed,</p>
+                            <p>become worthy of wanting.</p>
+                            <p></p>
+                            <p>But the light never reaches back.</p>
+                            <p>It only burns,</p>
+                            <p>steady and indifferent,</p>
+                            <p>cold beneath all its brightness.</p>
+                            <p></p>
+                            <p>And still the moth moves nearer,</p>
+                            <p>drawn by the cruel illusion</p>
+                            <p>that shining things</p>
+                            <p>must also know how to love.</p>
+                        </div>
+                        <img src="mothlight (1).png" alt="Moths swarming around a light bulb at night" class="poem-image">
+                    </div>
+                </article>
+
+                <article class="poem-card">
+                    <h3>The Light that Never Stays</h3>
+                    <p class="author">By Daniel Murphy</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p></p>
+                            <p>In bright white rooms, we try to play our part;</p>
+                            <p>We chase a light that feels so far away.</p>
+                            <p>The green light pulls us in, like it knows our heart,</p>
+                            <p>But fades, no matter where we are.</p>
+                            <p></p>
+                            <p>We build dreams on things that do not last</p>
+                            <p>And think that wealth will somehow make us whole;</p>
+                            <p>But time moves on and pulls us from the past,</p>
+                            <p>And leaves behind the parts we cannot control.</p>
+                            <p></p>
+                            <p>The color white looks pure but hides the truth—</p>
+                            <p>That nothing here can stay the same for long.</p>
+                            <p>We lose ourselves while chasing endless youth</p>
+                            <p>And learn too late that most of it was wrong.</p>
+                            <p></p>
+                            <p>We reach for more, then watch it slip away,</p>
+                            <p>Just like the light that never seems to stay.</p>
+                        </div>
+                        <img src="green-light.png" alt="Green light over dark water" class="poem-image">
+                    </div>
+                </article>
+            </section>
+
+            <!-- The Grapes of Wrath Section -->
+            <section id="grapes-of-wrath" class="category-section">
+                <h2>The Grapes of Wrath</h2>
+                
+                <article class="poem-card">
+                    <h3>Bright Rot</h3>
+                    <p class="author">By Anish Thota</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>Under the grocery store lights,</p>
+                            <p>the fruit still shines.</p>
+                            <p></p>
+                            <p>Apples polished red as stop signs,</p>
+                            <p>oranges glowing like miniature suns,</p>
+                            <p>grapes sealed in plastic</p>
+                            <p>tight enough to suffocate them.</p>
+                            <p></p>
+                            <p>Everything looks perfect in the store.</p>
+                            <p>Perfect enough to sell.</p>
+                            <p></p>
+                            <p>A worker rolls out another cart while,</p>
+                            <p></p>
+                            <p>beyond the sliding glass doors,</p>
+                            <p></p>
+                            <p>someone counts the same few dollars</p>
+                            <p></p>
+                            <p>over and over,</p>
+                            <p></p>
+                            <p>hoping the number will change.</p>
+                            <p></p>
+                            <p>Inside, abundance spills from every aisle.</p>
+                            <p>Outside, hunger waits in parked cars</p>
+                            <p>with engines running</p>
+                            <p>to keep the heat alive.</p>
+                            <p></p>
+                            <p>And when the fruit softens,</p>
+                            <p>when the color dulls just slightly,</p>
+                            <p>it is thrown away.</p>
+                            <p></p>
+                            <p>Bread sealed in garbage bags,</p>
+                            <p>milk poured down silver drains</p>
+                            <p>while stomachs fold inward</p>
+                            <p>a few streets away.</p>
+                            <p></p>
+                            <p>The dumpsters glow behind the store</p>
+                            <p>like hidden orchards.</p>
+                            <p>Even rotting,</p>
+                            <p>the peaches smell sweet.</p>
+                        </div>
+                        <img src="bright-rot.png" alt="Food waste in a dumpster" class="poem-image">
+                    </div>
+                </article>
+
+                <article class="poem-card">
+                    <h3>The House With No Home</h3>
+                    <p class="author">By Max Nyden</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>A house is one thing,</p>
+                            <p>But a home can be much more.</p>
+                            <p>In a house you'll find four walls and a roof.</p>
+                            <p>At home there will be a voice calling you to dinner.</p>
+                            <p></p>
+                            <p>Once a house is built it can stand alone forever,</p>
+                            <p>While the home must be raised and cared for.</p>
+                            <p></p>
+                            <p>You can measure a house in square feet,</p>
+                            <p>But a home is measured in memories.</p>
+                            <p></p>
+                            <p>Homes never stay still,</p>
+                            <p>A home is the people who refuse to leave you.</p>
+                            <p></p>
+                            <p>Many leave their house and take home along.</p>
+                            <p>This home follows in memory and habit.</p>
+                            <p></p>
+                            <p>A house with no home has no life,</p>
+                            <p>It is barren, boring, and bleak.</p>
+                            <p>But as the dust covers it up,</p>
+                            <p>It remembers how it once sheltered a home.</p>
+                        </div>
+                        <img src="house-no-home.png" alt="Abandoned house in a desert landscape" class="poem-image">
+                    </div>
+                </article>
+            </section>
+
+            <!-- The Things They Carried Section -->
+            <section id="things-carried" class="category-section">
+                <h2>The Things They Carried</h2>
+                
+                <article class="poem-card">
+                    <h3>Rooted Deep</h3>
+                    <p class="author">By Daniel Murphy</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p></p>
+                            <p>Driving around the lake, memories flood in;</p>
+                            <p>They stem from roots of pain, trauma, and regret.</p>
+                            <p>Heavy and tangible, they linger deep within;</p>
+                            <p>Despite time passed, war is not easy to forget.</p>
+                            <p></p>
+                            <p>Others show sympathy but cannot understand</p>
+                            <p>The never-ending pain of memories in my head—</p>
+                            <p>A piece of soul left behind in Vietnam's land.</p>
+                            <p>Closing my eyes, all I remember is those who bled.</p>
+                            <p></p>
+                            <p>I dream of opening up and sharing my thoughts with another.</p>
+                            <p>They congratulate me for seven medals, but no silver star;</p>
+                            <p>Sinking in the mud, I let go of a dear brother—</p>
+                            <p>The war still feels so close, despite being so far.</p>
+                            <p></p>
+                            <p>Stories hold no power with no one to listen;</p>
+                            <p>Facing my regrets alone, there's nobody to care.</p>
+                            <p>The fading lives of those lost burn out like a fire's glisten;</p>
+                            <p>There's no point in living a life I cannot bear.</p>
+                        </div>
+                        <img src="rooted-deep-1.png" alt="Soldiers in Vietnam field" class="poem-image">
+                    </div>
+                </article>
+
+                <article class="poem-card">
+                    <h3>What We Carry</h3>
+                    <p class="author">By Anish Thota</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>They carried backpacks,</p>
+                            <p></p>
+                            <p>heavy with textbooks,</p>
+                            <p></p>
+                            <p>unfinished assignments,</p>
+                            <p></p>
+                            <p>and the lingering fear</p>
+                            <p></p>
+                            <p>that one bad grade would be the end.</p>
+                            <p></p>
+                            <p>They carried suits,</p>
+                            <p></p>
+                            <p>pressed smooth and wrinkle free,</p>
+                            <p></p>
+                            <p>stitched together from expectations</p>
+                            <p>and definitions of success</p>
+                            <p>they never chose themselves.</p>
+                            <p></p>
+                            <p>They carry headphones,</p>
+                            <p>their music loud enough</p>
+                            <p>to drown out the whole world</p>
+                            <p>but not the loneliness plaguing them.</p>
+                            <p></p>
+                            <p>And always, they carried their shadows.</p>
+                            <p>they stretched across classroom floors</p>
+                            <p>followed them through interviews</p>
+                            <p>echoed in every reflective window.</p>
+                            <p></p>
+                            <p>The shadow whispered reminders</p>
+                            <p>of every mistake</p>
+                            <p>of every comparison</p>
+                            <p>of every version of themselves</p>
+                            <p>they thought they should be.</p>
+                            <p></p>
+                            <p>They carried all these things</p>
+                            <p>Worn so long they felt like skin.</p>
+                            <p></p>
+                            <p>And somewhere beneath the weight of it all,</p>
+                            <p>they carried themselves</p>
+                            <p>still searching for who they were</p>
+                            <p>without everything they were told to be.</p>
+                        </div>
+                        <img src="what-we-carry.png" alt="Illustration of a person with a dark looming shadow figure" class="poem-image">
+                    </div>
+                </article>
+            </section>
+
+            <!-- Other Section -->
+            <section id="other" class="category-section">
+                <h2>Other</h2>
+                
+                <article class="poem-card">
+                    <h3>Invisible Hands</h3>
+                    <p class="author">By Max Nyden</p>
+                    <div class="poem-card-inner">
+                        <div class="poem-text">
+                            <p>Before purple, pink, and yellow touch the sky,</p>
+                            <p>Workers bend while trucks roll by.</p>
+                            <p>Fingers cut, bruised, and red,</p>
+                            <p>Still barely earning daily bread.</p>
+                            <p></p>
+                            <p>The strawberries are bright and sweet,</p>
+                            <p>Yet no one mentions those who survived the heat.</p>
+                            <p>They stock the store and feed the land,</p>
+                            <p>Overshadowed by the common brand.</p>
+                            <p></p>
+                            <p>Like the dirt covering the pretty pink</p>
+                            <p>Being washed off in the sink.</p>
+                            <p>Their hard work and pride,</p>
+                            <p>Is simply cast aside.</p>
+                            <p></p>
+                            <p>And after the burning sun has already set,</p>
+                            <p>These hard workers still are breaking a sweat.</p>
+                            <p></p>
+                            <p>While many others lay their head,</p>
+                            <p>Without realizing the tears that have been shed.</p>
+                            <p></p>
+                            <p>To appreciate is to agree and like,</p>
+                            <p>But to respect is to explore the roots on a hike.</p>
+                        </div>
+                        <img src="invisible-hands.png" alt="Farm workers picking crops in a field" class="poem-image">
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Navigation between themes -->
+        <div class="poems-navigation">
+            <button class="poem-nav-btn back-to-themes">← Back to Themes</button>
+            <button class="poem-nav-btn prev-theme" style="display: none;">← Previous Theme</button>
+            <button class="poem-nav-btn next-theme" style="display: none;">Next Theme →</button>
+        </div>
+
+        <!-- Artist's Statements Page -->
+        <div id="artist-statements-display" class="artist-statements hidden">
+            <h2 class="statements-title">Artist's Statements</h2>
+            <p class="statements-intro">Deep dives into each poem from the collection</p>
+
+            <div class="statements-container">
+                <article class="statement-card">
+                    <h3>To Belong Here</h3>
+                    <p class="statement-author">By Max Nyden</p>
+                    <p class="statement-poem">Inspired by Kindred</p>
+                    <div class="statement-content">
+                        <p>This poem is meant to portray the theme of American assimilation as many ethnicities learn to adapt to American life. I was inspired by the novel "Kindred" written by Octavia E. Butler where the main character Dana has to adapt to a different time period when she time travels there. I wanted to specifically target the self changes which occur in assimilation as one tries to force themselves to be more "normal". I portray this when I write, "We chase acceptance just to fit in while leaving pieces of ourselves behind". I thought it was crucial to pinpoint the consequences of forced assimilation to highlight that it's ok not to fit in.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>Invisible Hands</h3>
+                    <p class="statement-author">By Max Nyden</p>
+                    <p class="statement-poem">Inspired by Fruits of Labor</p>
+                    <div class="statement-content">
+                        <p>I wrote this poem to highlight the hidden workers which support America, yet do not receive much recognition. This poem was inspired by the film "Fruits of Labor" directed by Emily Cohen Ibañez. This film follows a teenager whose family works as strawberry pickers. I thought this was significant because we often take for granted the luxury of just being able to pick up fresh fruit from a store while there are families who can hardly pay for the fruit which they pick themselves. In my poem I compared "the dirt covering the pretty pink being washed off in the sink" to "their hard work and pride, is simply cast aside". This line is meant to criticize the fact that most people ignore the workers' hard work like easily rinsing dirt off strawberries.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>Insurmountable Ashes</h3>
+                    <p class="statement-author">By Max Nyden</p>
+                    <p class="statement-poem">Inspired by The Great Gatsby</p>
+                    <div class="statement-content">
+                        <p>Insurmountable Ashes is meant to emphasize the impossibility of the American dream through combining aspects of the work which inspired me, "The Great Gatsby" written by F. Scott Fitzgerald. This novel follows a man named Gatsby who eventually leads himself down a path of demise while striving for a woman who represents the American dream to him. In the novel there is a valley of ashes which is a small place where the poor of New York City live. When I write, "The ash rises faster than our footsteps can climb, burying any path that we make", I try to represent the impossibility of the American dream by explaining how anyone who tries to reach the green light at the top of the mountain, will inevitably fail to do so.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>The House With No Home</h3>
+                    <p class="statement-author">By Max Nyden</p>
+                    <p class="statement-poem">Inspired by The Grapes of Wrath</p>
+                    <div class="statement-content">
+                        <p>This poem was written so that I could explain the concept of what home really is. As I wrote this poem, I was largely inspired by "The Grapes of Wrath" written by John Steinbeck. This work follows the Joad family who ultimately abandons their house in Oklahoma to seek refuge from the dust bowl in California. Through this poem I try to portray home as something more personal and socially connected rather than a physical building. I wrote that "Once a house is built it can stand alone forever, while the home must be raised and cared for". This sentence uses personification, by mentioning that a home can be raised, in order to give home a human feeling, making it socially connected to us.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>Mothlight</h3>
+                    <p class="statement-author">By Anish Thota</p>
+                    <p class="statement-poem">Inspired by The Great Gatsby</p>
+                    <div class="statement-content">
+                        <p>The poem Mothlight is inspired by the novel <em> The Great Gatsby</em>. The extended metaphor in "Mothlight" explores destructive want and illusory hope. The poem is a study of that wanting for something so intensely, so absolutely, that we deny any evidence of its dangerousness, any of the warnings that have been piled at our feet literally and figuratively. The mothlight represents not just success or aspiration, or any desire whose object promises validation or wholeness outside of the self, but this is perhaps the true horror of the poem — the light does not respond. The light only burns. In the end, we are accomplices to its tragedy — the moth knows at some primal level that the light will burn and destroy him, yet it goes ever more toward it. This is a poem about social pressure and internalized beliefs, lulling us to self-destruction.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>Bright Rot</h3>
+                    <p class="statement-author">By Anish Thota</p>
+                    <p class="statement-poem">Inspired by The Grapes of Wrath</p>
+                    <div class="statement-content">
+                        <p>The poem Bright Rot is inspired by the novel <em> The Grapes of Wrath</em>. The stark juxtaposition present in "Bright Rot" is purposeful as I wanted to emphasize the inequality present in our nation. Perfect and plenty on the outside, lack of food on the inside. The poem will not allow us to have consumption and no repercussion; the bright, perfect fruit must be seen in relation to a system of unequal resources and immense waste. The criticism extends beyond the store where this occurs to all such stores and the whole system of waste and lack that surrounds them. The end of the poem, "rot of peaches that has lost their sweetness only on the inside," is stunning and disturbing, a reminder of the traces of beauty that linger even within failed systems, beauty that can feed the empty mouths around them no longer.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>What We Carry</h3>
+                    <p class="statement-author">By Anish Thota</p>
+                    <p class="statement-poem">Inspired by The Things They Carried</p>
+                    <div class="statement-content">
+                        <p>The poem What We Carry is inspired by the novel <em> The Things They Carried</em>. This poem continues O'Brien's idea of what we carry from the war and into our everyday lives. Textbooks and the fear of failure; work suits and the things we are told to be; music playing so loud we can't hear our own loneliness. Above all, however, is our shadows — all the memories of past errors, comparisons, what we were told to be that are weighing on our backs. Toward the end, this poem tells us, is simply ourselves beneath it all, still looking to find our selves in all the excess they carry. The poem is a testament to be free from what we carry, to realize they are so worn that they have become our skin, and that they should perhaps be peeled off so we may find who we are under it.</p>
+                    </div>
+                </article>
+
+                <article class="statement-card">
+                    <h3>Golden Door</h3>
+                    <p class="statement-author">By Anish Thota</p>
+                    <p class="statement-poem">Short Stories / American Identity</p>
+                    <div class="statement-content">
+                        <p>The poem Golden Door is inspired by the short story <em>On Being a Refugee, an American — and a Human Being</em>. This poem speaks with utter truth to the immigrant and refugee experience in America. People become labeled refugee, alien, strangers, as though a few words can hold the entirety of human experience and tenacity. The poem challenges this and declares that hope exists in America — not as an airy idealism, but as an insistent refusal to go away.</p>
+                        <p>This poem does not avoid talking about the hardship: the empty pockets, the language gap, the trauma passed down through generations. But it argues that this does not need to be the whole of the story. It declares that hope is something built through community and learning and growing roots and believing that a country can actually fulfill its own promise. The poem is a love letter to the possibility of America, born of the experience of those striving for acceptance within it.</p>
+                    </div>
+                </article>
+            </div>
+
+            <button class="btn btn-secondary back-home-btn">← Back to Home</button>
+        </div>
+    </main>
+
+        <!-- Citations Page -->
+        <div id="citations-display" class="citations-page hidden">
+            <h2 class="statements-title">Citations</h2>
+            <p class="statements-intro">Image sources used throughout this collection</p>
+
+            <div class="citations-container">
+                <ol class="citations-list">
+                    <li>Bennett, Clay. "The Melting Pot." <em>Chattanooga Times Free Press</em>, Google Images, <a href="https://pacechronicle.com/opinion/2018/02/10/more-spices-in-the-melting-pot/" target="_blank">pacechronicle.com</a>. Used in <em>To Belong Here</em>.</li>
+                    <li>"California Farmworkers Hit Hard by COVID-19, Study Finds." <em>UC Berkeley Research</em>, University of California Berkeley, <a href="https://vcresearch.berkeley.edu/news/california-farmworkers-hit-hard-covid-19-study-finds" target="_blank">vcresearch.berkeley.edu</a>. Used in <em>Invisible Hands</em>.</li>
+                    <li>"Ash Pile." <em>iStock by Getty Images</em>, <a href="https://www.istockphoto.com/photos/ash-pile" target="_blank">www.istockphoto.com</a>. Used in <em>Insurmountable Ashes</em>.</li>
+                    <li>"Abandoned House in the Desert Near a Leafless Tree." <em>Magnific</em>, <a href="https://www.magnific.com/free-photo/beautiful-shot-old-abandoned-house-middle-desert-near-leafless-tree_7810602.htm" target="_blank">www.magnific.com</a>. Used in <em>The House With No Home</em>.</li>
+                    <li>"African Americans Cutting Sugar Cane on a Plantation in the Deep South." <em>Alamy</em>, <a href="https://www.alamy.com/afroamericans-cutting-sugar-cane-on-a-plantation-in-the-deep-south-image7712433.html" target="_blank">www.alamy.com</a>. Used in <em>What Time Refuses to Forget</em>.</li>
+                    <li>"American Indian Wars." <em>Wikipedia</em>, Wikimedia Foundation, <a href="https://en.wikipedia.org/wiki/American_Indian_Wars" target="_blank">en.wikipedia.org</a>. Used in <em>Shadows of the Reservation</em>.</li>
+                    <li>"The Things They Carried." <em>CommonLit</em>, <a href="https://www.commonlit.org/texts/fyc-the-things-they-carried-excerpted-and-spin" target="_blank">www.commonlit.org</a>. Used in <em>Rooted Deep</em>.</li>
+                    <li>"The Green Light." <em>Eckleburg's Eyes</em>, <a href="https://eckleburgseyes.weebly.com/the-green-light.html" target="_blank">eckleburgseyes.weebly.com</a>. Used in <em>The Light That Never Stays</em>.</li>
+                    <li>"Group of Termites Flying Around Light at Night." <em>iStock by Getty Images</em>, <a href="https://plunketts.net/blog/moths-attracted-light" target="_blank">plunketts.net</a>. Used in <em>Mothlight</em>.</li>
+                    <li>"The Fight Against Food Waste Comes to Oregon." <em>PIRG</em>, <a href="https://pirg.org/oregon/articles/the-fight-against-food-waste-comes-to-oregon-2/" target="_blank">pirg.org</a>. Used in <em>Bright Rot</em>.</li>
+                    <li>"Each Our Own Devil — Young Man Stalked by Monster Shadow." <em>Dreamstime</em>, <a href="https://www.dreamstime.com/each-our-own-devil-young-man-lonely-street-stalked-monster-his-own-shadow-pen-ink-illustration-based-image109199594" target="_blank">www.dreamstime.com</a>. Used in <em>What We Carry</em>.</li>
+                    <li>"Climber with Flag Conquering Top of Mountain in Hand." <em>Magnific</em>, <a href="https://www.magnific.com/free-vector/climber-with-flag-conquering-top-mountain-hand_30897129.htm" target="_blank">www.magnific.com</a>. Used in <em>Golden Door</em>.</li>
+                </ol>
+            </div>
+
+            <button class="btn btn-secondary back-home-btn citations-back-btn">← Back to Home</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
