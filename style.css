@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --american-red: #B22234;
+    --american-blue: #5B5EA6;
+    --american-white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --lighter-gray: #FAFAFA;
+    --dark-gray: #333333;
+    --medium-gray: #666666;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--american-white);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--american-white);
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--american-blue);
+}
+
+/* Hero Header */
+.hero-header {
+    background: linear-gradient(135deg, var(--american-blue) 0%, #2a2a5a 100%);
+    color: var(--american-white);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    color: var(--american-red);
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.italic-word {
+    font-style: italic;
+    color: var(--american-red);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--american-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--american-red);
+    color: var(--american-white);
+    border-color: var(--american-red);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--american-red);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--american-white);
+    border-color: var(--american-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--american-white);
+    color: var(--american-blue);
+}
+
+/* Themes Section */
+.themes-section {
+    padding: 5rem 2rem;
+    background-color: var(--lighter-gray);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--american-red);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.view-all {
+    color: var(--american-blue);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.view-all:hover {
+    color: var(--american-red);
+}
+
+/* Themes Grid */
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.theme-card {
+    background: var(--american-white);
+    padding: 2.5rem;
+    border-left: 4px solid var(--american-red);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.theme-number {
+    font-size: 2.5rem;
+    color: var(--american-blue);
+    font-weight: bold;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+.theme-count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--american-red);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.theme-name {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.theme-desc {
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Poems Navigation */
+.poems-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--lighter-gray);
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.poem-nav-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--american-blue);
+    background-color: transparent;
+    color: var(--american-blue);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.poem-nav-btn:hover {
+    background-color: var(--american-blue);
+    color: var(--american-white);
+}
+
+.poem-nav-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.poem-nav-btn.disabled:hover {
+    background-color: transparent;
+    color: var(--american-blue);
+}
+
+/* Artist Statements Page */
+.artist-statements {
+    padding: 3rem 2rem;
+    background: var(--american-white);
+}
+
+.artist-statements.hidden {
+    display: none;
+}
+
+.statements-title {
+    font-size: 2.5rem;
+    color: var(--american-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.statements-intro {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.statements-container {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.statement-card {
+    background: var(--american-white);
+    border-left: 5px solid var(--american-red);
+    border-right: 5px solid var(--american-blue);
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.statement-card h3 {
+    font-size: 1.6rem;
+    color: var(--american-blue);
+    margin-bottom: 0.5rem;
+}
+
+.statement-author {
+    font-style: italic;
+    color: var(--american-red);
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.statement-poem {
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.statement-content {
+    line-height: 1.9;
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+.statement-content p {
+    margin-bottom: 1rem;
+}
+
+.back-home-btn {
+    display: block;
+    margin: 2rem auto;
+}
+
+/* Poems Display */
+.poems-display {
+    padding: 3rem 2rem;
+    background: var(--american-white);
+}
+
+.poems-display.hidden {
+    display: none;
+}
+
+.category-section {
+    display: none;
+}
+
+.category-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.category-section h2 {
+    font-size: 2.5rem;
+    color: var(--american-blue);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--american-red);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Poem Cards */
+.poem-card {
+    background: var(--american-white);
+    border-left: 5px solid var(--american-red);
+    border-right: 5px solid var(--american-blue);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.poem-card h3 {
+    font-size: 1.8rem;
+    color: var(--american-blue);
+    margin-bottom: 0.5rem;
+}
+
+.author {
+    font-style: italic;
+    color: var(--american-red);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.poem-text {
+    line-height: 1.9;
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+}
+
+.poem-text p {
+    margin-bottom: 0.5rem;
+}
+
+.poem-text em {
+    color: var(--american-blue);
+    font-size: 0.95rem;
+}
+
+/* Artist Statement Section */
+.statement-section {
+    display: none;
+}
+
+.statement-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.statement-title {
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.statement-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--medium-gray);
+    margin-bottom: 1.5rem;
+}
+
+.read-full {
+    color: var(--american-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read-full:hover {
+    color: var(--american-red);
+}
+
+/* Essential Question Section */
+.essential-section {
+    display: none;
+}
+
+/* Poem with image layout */
+.poem-card-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.poem-card-inner .poem-text {
+    flex: 1;
+    min-width: 0;
+}
+ßß
+.poem-image {
+    width: 500px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.poem-images-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+    width: 250px;
+}
+
+.poem-images-stack .poem-image {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .poem-card-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .poem-image {
+        width: 100%;
+    }
+    .poem-images-stack {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-section h2 {
+        font-size: 2rem;
+    }
+
+    .poem-card {
+        padding: 1.5rem;
+    }
+
+    .poem-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .statement-title {
+        font-size: 2rem;
+    }
+
+    .essential-question {
+        font-size: 1.1rem;
+    }
+
+    .poems-navigation {
+        flex-direction: column;
+    }
+
+    .poem-nav-btn {
+        width: 100%;
+    }
+
+    .statements-title {
+        font-size: 2rem;
+    }
+
+    .statement-card {
+        padding: 1.5rem;
+    }
+
+    .statement-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .statement-content {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-header {
+        padding: 3rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .theme-card {
+        padding: 1.5rem;
+    }
+
+    .poem-card {
+        border-left: 3px solid var(--american-red);
+        border-right: 3px solid var(--american-blue);
+        padding: 1rem;
+    }
+
+    .poem-text {
+        font-size: 0.95rem;
+    }
+
+    .poems-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .poem-nav-btn {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .statements-title {
+        font-size: 1.8rem;
+    }
+
+    .statements-intro {
+        font-size: 1rem;
+    }
+
+    .statement-card {
+        padding: 1.2rem;
+    }
+
+    .statement-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .statement-author {
+        font-size: 0.9rem;
+    }
+
+    .statement-content {
+        font-size: 0.9rem;
+    }
+}
