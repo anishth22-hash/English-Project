@@ -507,7 +507,7 @@ body {
 }
 
 .poem-image {
-    width: 500px;
+    width: 750px;
     max-width: 30%;
     flex-shrink: 0;
     border-radius: 16px;
